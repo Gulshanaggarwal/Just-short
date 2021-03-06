@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Url Shortening Service</title>
+    style
+        include ../public/style.css
+</head>
+
+<body>
+    <header id="header">
+        <h2>Just short</h2>
+        <p>Use our url short service @free</p>
+    </header>
+    <div id="main-container">
+        <form class="form" action="/" method="post">
+            <input type="text" placeholder="Your name(optional)" name="user">
+            <input type="url" placeholder="simply put your long url here!" required autocomplete name="originalUrl">
+            <button type="submit">Submit</button>
+        </form>
+        <ul class="response-container">
+            each value in array
+               <li>
+                     <div class="details">
+                         <h3><span>User:</span> #{value.user}</h3>
+                         <p>#{value.Date}</p>
+                     </div>
+                     <div class="original-url">
+                         <strong>Your longUrl &gt;&gt;</strong>
+                         <a href=#{value.longUrl} target="_blank">#{value.longUrl}</a>
+                     </div>
+                     <div class="shorted-url">
+                         <strong>Shorted Url &gt;&gt;</strong>
+                         <a href=#{value.shortUrl} target="_blank">#{value.shortUrl}</a>
+                     </div>
+               </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ----Header part------*/
+
+#header{
+    background-color: black;
+}
+#header>h2{
+    color: darkseagreen;
+    margin:1rem 1rem 1rem 3rem;
+}
+#header>p{
+    color: darkgrey;
+    margin:1rem 1rem 1rem 3rem;
+}
+
+/* ----- Main Container-----*/
+
+
+/* ----- Form container-----*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form>input{
+    width: 80%;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.form>button{
+    background-color: darkseagreen;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 80px;
+    margin: 1rem;
+    cursor: pointer;
+    display: block;
+}
+.form>input:hover , .form>button:hover{
+    border: 2px solid darkseagreen;
+}
+
+/* ----- response box-----*/
+
+.response-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+.response-container li{
+    margin: 1rem;
+    border:2px solid #9e9999d5;
+    border-radius: 5px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.details h3 span{
+    color: darkseagreen;
+}
+.details p{
+    margin-right: 2rem;
+    border: 2px solid rgb(225, 225, 231);
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+}
+.original-url{
+    display: flex;
+    border-bottom: 2px solid rgb(225, 225, 231);
+    margin-top:0.1rem;
+    margin-left: 1rem;
+    width: 95%;
+}
+.original-url strong,.original-url a{
+    color:rgb(252, 55, 55);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.original-url a{
+    margin-left: 1rem;
+}
+.shorted-url{
+    display: flex;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-top:0.1rem;
+    margin-left: 1rem;
+    width: 95%;
+}
+
+.shorted-url strong,.shorted-url a{
+    color: rgb(26, 88, 26);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.shorted-url a{
+    margin-left: 1rem;
+}
+
